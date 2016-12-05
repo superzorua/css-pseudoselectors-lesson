@@ -1,0 +1,27 @@
+#hoverMe {
+  width: 200px;
+  margin: auto;
+  background-color: steelblue;
+  margin-bottom: 64px;
+}
+
+#hoverMe:hover {
+  width: 256px;
+  background-color: gray;
+  transition: background-color 0.5s, width 1s;
+}
+
+#redButton {
+  width: 100px;
+  margin: auto;
+  background-color: purple;
+}
+
+#redButton:active {
+  background-color: red;
+}
+
+#main {
+  text-align: center;
+  transition: background-color 1s;
+}
