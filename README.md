@@ -8,9 +8,10 @@ You have already learned about CSS selectors--the way you select an element on t
 Pseudoselectors must be attached to the selector of the element you wish to use them on. You do this with a `:`.
 
 The most common pseudoselectors are `:visited`, `:hover`, and `:active`.
--`:visited` is used for links. You have probably seen this one before. All browsers include a built-in default style for links: they are underlined and blue when first viewed, and when they are clicked, they turn purple. Most sites override this default with their own style, but you can still see it on sites like Wikipedia.
--`:hover` can be used on almost any element. This pseudoselector lets you change the style of an element whenever the mouse is on top of it. The styles go back to how they were before when the mouse is moved away from the element.
--`:active` is used for elements that allow user interaction, like buttons and text input boxes. Browsers usually have defaults for these, too: when you click a button, its style changes so it looks like it's pressed in. When you click a text input box, some browsers apply a blue border around it to show which one you're typing in.
+
+- `:visited` is used for links. You have probably seen this one before. All browsers include a built-in default style for links: they are underlined and blue when first viewed, and when they are clicked, they turn purple. Most sites override this default with their own style, but you can still see it on sites like Wikipedia.
+- `:hover` can be used on almost any element. This pseudoselector lets you change the style of an element whenever the mouse is on top of it. The styles go back to how they were before when the mouse is moved away from the element.
+- `:active` is used for elements that allow user interaction, like buttons and text input boxes. Browsers usually have defaults for these, too: when you click a button, its style changes so it looks like it's pressed in. When you click a text input box, some browsers apply a blue border around it to show which one you're typing in.
 
 #####Example
 
@@ -52,26 +53,29 @@ div:hover {
   transition: background-color 0.5s, font-size 0.5s;
 }
 ```
+You can even have these two properties change at different speeds--just give them different numbers.
 
 ###Exercise Instructions
 
 #####HTML file
 Create an index.html with three objects:
--One div that has an id and some text in it.
--A link to another page (yours or someone else's) inside that div.
--One button that has an id and says "click me".
--A wrapper div with the id "main" that has these two elements placed inside it.
+
+- One div that has an id and some text in it.
+- A link to another page (yours or someone else's) inside that div.
+- One button that has an id and says "click me".
+- A wrapper div with the id "main" that has these two elements placed inside it.
 
 #####CSS file
 Create a CSS file that uses the following:
--A rule that changes the text color of a link you've already visited. Make it a color that is not the default purple.
--A rule that adds a width and a background color to your div with the id.
--A rule that changes one or more of those properties when you hover over the div.
--A rule that changes something about your button when your button is clicked.
--A rule or rules that make those properties change smoothly rather than instantly.
+
+- A rule that changes the text color of a link you've already visited. Make it a color that is not the default purple.
+- A rule that adds a width and a background color to your div with the id.
+- A rule that changes one or more of those properties when you hover over the div.
+- A rule that changes something about your button when your button is clicked.
+- A rule or rules that make those properties change smoothly rather than instantly.
 
 ####Bonus round
--Add an onclick to your button that changes the background color of the "main" div. Make sure it changes smoothly!
--Add an onclick to your button that plays a sound.
--Add both for MAXIMUM COOL!
--Research what other properties work with CSS transitions and add some to your div.
+- Add an onclick to your button that changes the background color of the "main" div. Make sure it changes smoothly!
+- Add an onclick to your button that plays a sound.
+- Add both for MAXIMUM COOL!
+- Research what other properties work with CSS transitions and add some to your div.
