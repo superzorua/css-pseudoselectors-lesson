@@ -42,6 +42,23 @@ button:active {
 }
 ```
 
+You can have multiple pseudoselectors on the same element for more complex effects. Below, the button's text color will change when it is hovered, and its background color will change when it is clicked.
+
+```
+button {
+  background-color: purple;
+}
+
+button:active {
+  background-color: red;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  color: white;
+}
+```
+
 #####Explanation
 A CSS transition is created by the `transition` property. At its most basic, it needs to know which property to change, and how long the change should take. In this example, the button will slowly turn red over half a second when it is clicked.
 
@@ -54,6 +71,15 @@ div:hover {
 }
 ```
 You can even have these two properties change at different speeds--just give them different numbers.
+
+You can also specify a function to control the timing of the transition. The default is `ease`, meaning it is slower at the start and end than it is in the middle, like a parabola. If you like algebra, you can come up with your own function.
+
+Finally, you can specify a delay, which tells the transition not to start until that amount of time has passed. If you wanted to change the color and then change the font size when the color is done, you could use:
+
+```
+transition: background-color 0.5s, font-size 0.5s ease 0.5s;
+```
+Transition properties are always in the same order: property, duration, function, and delay. The last two can be left off unless you need to change them, because your browser will know to fill them in with default values.
 
 ###Exercise Instructions
 
@@ -71,8 +97,12 @@ Create a CSS file that uses the following:
 - A rule that changes the text color of a link you've already visited. Make it a color that is not the default purple.
 - A rule that adds a width and a background color to your div with the id.
 - A rule that changes one or more of those properties when you hover over the div.
+
+- A rule that makes your button big and round. (Try exploring what `border-radius` does.)
 - A rule that changes something about your button when your button is clicked.
 - A rule or rules that make those properties change smoothly rather than instantly.
+
+- Any other rules you like. Make your button stand out! Change the font, font size, border colors and border style, even add box-shadow and text-shadow.
 
 ####Bonus round
 - Add an onclick to your button that changes the background color of the "main" div. Make sure it changes smoothly!
