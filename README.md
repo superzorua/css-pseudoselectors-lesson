@@ -1,10 +1,12 @@
 # css-pseudoselectors-lesson
 Educational exercise for CSS pseudoselectors, transitions and animation
 
-###Explanation
+###Summary
 You have already learned about CSS selectors--the way you select an element on the page to change its styles. CSS has the ability to use pseudo-selectors as well. "Pseudo" means "kind of, but not really"--these pseudoselectors are kind of, but not really, selectors. This means they can change the styles of an element, but they have to have a real selector helping them, and they can only change those elements when certain things happen on the page. Because of this, they can help you make a page respond to the user's actions. You can even use them for animating elements!
 
-####CSS Pseudoselectors
+##For instructors
+
+####Summary of CSS Pseudoselectors
 Pseudoselectors must be attached to the selector of the element you wish to use them on. You do this with a `:`.
 
 The most common pseudoselectors are `:visited`, `:hover`, and `:active`.
@@ -27,6 +29,22 @@ button:active {
 
 When you click any button on the page you used this CSS on, those buttons will turn red when clicked.
 
+You can have multiple pseudoselectors on the same element for more complex effects. Below, the button's text color will change when it is hovered, and its background color will change when it is clicked.
+
+```
+button {
+  background-color: purple;
+}
+
+button:active {
+  background-color: red;
+}
+
+button:hover {
+  color: white;
+}
+```
+
 ####CSS Transitions
 CSS transitions are commonly used with pseudoselectors. A transition is a smooth change between one state and another. CSS knows how to do this automatically, but it needs to know a few things in order to make it happen.
 
@@ -42,24 +60,7 @@ button:active {
 }
 ```
 
-You can have multiple pseudoselectors on the same element for more complex effects. Below, the button's text color will change when it is hovered, and its background color will change when it is clicked.
-
-```
-button {
-  background-color: purple;
-}
-
-button:active {
-  background-color: red;
-  transition: background-color 0.5s;
-}
-
-button:hover {
-  color: white;
-}
-```
-
-#####Explanation
+#####Summary of CSS transitions
 A CSS transition is created by the `transition` property. At its most basic, it needs to know which property to change, and how long the change should take. In this example, the button will slowly turn red over half a second when it is clicked.
 
 You can change more than one property with one `transition`. Just separate each one with a comma, like so:
@@ -81,7 +82,7 @@ transition: background-color 0.5s, font-size 0.5s ease 0.5s;
 ```
 Transition properties are always in the same order: property, duration, function, and delay. The last two can be left off unless you need to change them, because your browser will know to fill them in with default values.
 
-###Exercise Instructions
+##Exercise Instructions
 
 #####HTML file
 Create an index.html with three objects:
