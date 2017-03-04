@@ -31,4 +31,14 @@
   min-height: 100%;
   text-align: center;
   transition: background-color 1s;
+  
+}
+button {
+  background-color: blue;
+}
+button:active {
+  background-color: yellow
+}
+button:hover {
+  background-color: red
 }
